@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>我的链接台 · 高举</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:#0f1115;color:#e8eaed}
+.wrap{max-width:760px;margin:0 auto;padding:28px 18px 48px}
+h1{font-size:26px;margin:0 0 6px}
+.sub{color:#9aa0a6;font-size:14px;margin:0 0 20px;line-height:1.6}
+.search{width:100%;padding:12px 14px;border-radius:12px;border:1px solid #2a2f3a;background:#171a21;color:#e8eaed;font-size:16px;outline:none}
+.sec{margin-top:28px}
+.sec-title{font-size:15px;color:#8ab4f8;letter-spacing:1px;margin:0 0 12px}
+.card{display:block;text-decoration:none;color:#e8eaed;background:#171a21;border:1px solid #2a2f3a;border-radius:14px;padding:16px;margin-bottom:10px}
+.card:active{background:#1d212b}
+.card-title{font-size:17px;font-weight:600;margin:0 0 4px}
+.card-desc{font-size:13px;color:#9aa0a6;margin:0 0 6px;line-height:1.5}
+.card-url{font-size:12px;color:#5f6368;word-break:break-all}
+.tag{display:inline-block;font-size:11px;color:#0f1115;background:#8ab4f8;border-radius:999px;padding:2px 8px;margin-left:8px;vertical-align:2px}
+.foot{margin-top:36px;color:#5f6368;font-size:12px;line-height:1.7}
+.empty{display:none;color:#9aa0a6;font-size:14px;margin-top:20px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>我的链接台</h1>
+<p class="sub">只放链接，不放待办。先公开上线，登录权限以后再说。<br>更新：2026-11-03 · 新增链接直接跟 Muse 说一声就行。</p>
+<input class="search" id="q" type="search" placeholder="搜链接…">
+<div class="empty" id="empty">没搜到，换个词试试。</div>
+
+<div class="sec" data-sec>
+<p class="sec-title">我做的站 · Muse 部署</p>
+<a class="card" data-k="图解大模型 大模型 训练 推理 agent llm" href="https://joe12-24.github.io/how-llms-work/">
+<p class="card-title">图解大模型<span class="tag">GitHub Pages</span></p>
+<p class="card-desc">它是怎么训练、怎么推理、怎么干活的 —— 互动教学站</p>
+<span class="card-url">joe12-24.github.io/how-llms-work</span>
+</a>
+<a class="card" data-k="数学小花园 儿童 加减法 练习 小朋友 kids math" href="https://joe12-24.github.io/kids-math-quiz/">
+<p class="card-title">数学小花园<span class="tag">GitHub Pages</span></p>
+<p class="card-desc">给小朋友的加减法闯关练习，手机 / 平板直接玩</p>
+<span class="card-url">joe12-24.github.io/kids-math-quiz</span>
+</a>
+<a class="card" data-k="科技热榜 space 腾讯云 资讯" href="http://124.220.171.169:8090/space.html">
+<p class="card-title">科技热榜 · space<span class="tag">腾讯云</span></p>
+<p class="card-desc">科技资讯聚合页，放在自己的腾讯云服务器上</p>
+<span class="card-url">124.220.171.169:8090/space.html</span>
+</a>
+<a class="card" data-k="腾讯云 文件站 目录 服务器 files" href="http://124.220.171.169:8090/">
+<p class="card-title">腾讯云文件站<span class="tag">腾讯云</span></p>
+<p class="card-desc">服务器公开文件目录（目前有 space 和 qr）</p>
+<span class="card-url">124.220.171.169:8090</span>
+</a>
+</div>
+
+<div class="sec" data-sec>
+<p class="sec-title">代码仓库 · 公开</p>
+<a class="card" data-k="github 主页 代码 仓库 joe12-24" href="https://github.com/Joe12-24">
+<p class="card-title">GitHub 主页</p>
+<p class="card-desc">Joe12-24 的全部公开仓库</p>
+<span class="card-url">github.com/Joe12-24</span>
+</a>
+<a class="card" data-k="github 图解大模型 仓库 源码 how llms work" href="https://github.com/Joe12-24/how-llms-work">
+<p class="card-title">how-llms-work 源码</p>
+<p class="card-desc">「图解大模型」站的仓库</p>
+<span class="card-url">github.com/Joe12-24/how-llms-work</span>
+</a>
+<a class="card" data-k="github 数学小花园 仓库 源码 kids math quiz" href="https://github.com/Joe12-24/kids-math-quiz">
+<p class="card-title">kids-math-quiz 源码</p>
+<p class="card-desc">「数学小花园」的仓库</p>
+<span class="card-url">github.com/Joe12-24/kids-math-quiz</span>
+</a>
+</div>
+
+<div class="sec" data-sec>
+<p class="sec-title">这个页面本身</p>
+<a class="card" data-k="链接台 导航 本页 links 源码" href="https://github.com/Joe12-24/links">
+<p class="card-title">links 源码</p>
+<p class="card-desc">本导航页的仓库，改链接改这里</p>
+<span class="card-url">github.com/Joe12-24/links</span>
+</a>
+</div>
+
+<p class="foot">说明：私有仓库（a-share-systems、job-camp 等）没放进来，公开页放私有链接没意义、还漏名字。等你决定加登录 / 改私有部署，再把那批补进一个仅自己可见的版本。</p>
+</div>
+<script>
+var q=document.getElementById("q");
+var cards=document.querySelectorAll(".card");
+var secs=document.querySelectorAll("[data-sec]");
+var empty=document.getElementById("empty");
+q.addEventListener("input",function(){
+  var v=q.value.trim().toLowerCase();var any=false;
+  cards.forEach(function(c){
+    var hit=!v||(c.textContent+" "+(c.getAttribute("data-k")||"")).toLowerCase().indexOf(v)>=0;
+    c.style.display=hit?"block":"none";if(hit)any=true;
+  });
+  secs.forEach(function(s){
+    var vis=false;s.querySelectorAll(".card").forEach(function(c){if(c.style.display!=="none")vis=true});
+    s.style.display=vis?"block":"none";
+  });
+  empty.style.display=any?"none":"block";
+});
+</script>
+</body>
+</html>
